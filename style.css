@@ -1,4 +1,5 @@
-body {
+body
+{
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -9,7 +10,8 @@ body {
     
 }
 
-.container {
+.container
+{
     max-width: 800px;
     margin: 50px auto;
     padding: 20px;
@@ -20,22 +22,26 @@ body {
 
 }
 
-h1, h2 {
+h1, h2
+{
     text-align: center;
     color: #333;
 }
 
-.form-group {
+.form-group
+{
     margin-bottom: 20px;
 }
 
-.form-group label {
+.form-group label
+{
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
 }
 
-.form-group input {
+.form-group input
+{
     width: 100%;
     padding: 8px;
     font-size: 16px;
@@ -43,7 +49,8 @@ h1, h2 {
     border-radius: 4px;
 }
 
-button {
+button
+{
     display: block;
     width: 100%;
     padding: 10px;
@@ -55,25 +62,51 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+button:hover
+{
     background-color: #218838;
 }
 
-table {
+table
+{
     width: 100%;
     margin-top: 20px;
     border-collapse: collapse;
 }
 
-table, th, td {
+table, th, td
+{
     border: 1px solid #ddd;
 }
 
-th, td {
+th, td
+{
     padding: 10px;
     text-align: center;
 }
 
-th {
+th
+{
     background-color: #f8f8f8;
+}
+/* mobile */
+@media only screen and (max-width: 739px)
+{
+    .container {
+        max-width: 400px;
+        margin: 20px auto;
+        padding: 10px;
+    }
+    .form-group input {
+        width: 95%;
+        padding: 8px;
+        font-size: 16px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+}
+/*tablet*/
+@media only screen and (min-width: 740px) and (max-width: 1024px)
+{
+    
 }
