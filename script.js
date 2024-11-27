@@ -25,12 +25,24 @@ function phanBo()
     resultBody.innerHTML = '';
     for (let i = 0; i < sotientrinh; i++)
     {
-        const row = `<tr>
+        const row =
+        `<tr>
             <td>Tiến trình ${i + 1}</td>
             <td>${kichthuoctientrinh[i]}</td>
             <td>${tientrinh[i] !== -1 ? 'Khối ' + tientrinh[i] : 'Không đủ bộ nhớ'}</td>
             <td>${tientrinh[i] !== -1 ? phanmanh[i] : 'N/A'}</td>
         </tr>`;
         resultBody.innerHTML += row;
+    }
+    const khoinhoconlai = document.getElementById('khoinhoconlai');
+    khoinhoconlai.innerHTML = '';
+    for(let i  = 0; i < sokhoi; i++)
+    {
+        const row = 
+        `<tr>
+            <td>Khối ${i + 1}</td>
+            <td>${kichthuockhoi[i]}</td>
+        </tr>`;
+        khoinhoconlai.innerHTML += row;
     }
 }
